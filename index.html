@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Softramming | Secure Web Systems & Analytics</title>
+<meta name="description" content="Softramming builds and secures data-driven web systems, analytics dashboards, and risk-aware platforms for growing businesses.">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<!-- SEO: Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Softramming",
+  "url": "https://softramming.com",
+  "logo": "https://softramming.com/logo.png",
+  "sameAs": [
+    "https://instagram.com/soft_rammer",
+    "https://youtube.com/@softramming"
+  ],
+  "description": "Secure web systems, analytics dashboards, and system risk assessments for businesses."
+}
+</script>
+
+<style>
+:root{
+  --primary:#0b5ed7;
+  --dark:#0f172a;
+  --light:#f8fafc;
+  --gray:#64748b;
+  --card:#ffffff;
+  --whatsapp:#25D366;
+}
+
+body.dark{
+  --light:#020617;
+  --dark:#e5e7eb;
+  --gray:#94a3b8;
+  --card:#020617;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
+body{background:var(--light);color:var(--dark);line-height:1.6;transition:.3s}
+a{text-decoration:none;color:inherit}
+
+.container{max-width:1100px;margin:auto;padding:0 20px}
+
+/* Dark toggle */
+.toggle{
+  position:fixed;
+  top:20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right:20px;
+  background:var(--card);
+  border-radius:50%;
+  padding:12px;
+  cursor:pointer;
+  box-shadow:0 6px 20px rgba(0,0,0,.15);
+  z-index:999;
+}
+
+/* HERO */
+header{
+  position:relative;
+  padding:100px 0 150px;
+  background:linear-gradient(135deg,#0b5ed7,#2563eb);
+  color:white;
+}
+
+.hero-actions{
+  margin-top:35px;
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.cta-btn{
+  padding:14px 28px;
+  background:white;
+  color:var(--primary);
+  font-weight:600;
+  border-radius:8px;
+}
+
+.whatsapp-btn{
+  padding:14px 26px;
+  background:var(--whatsapp);
+  color:white;
+  border-radius:8px;
+  display:flex;
+  gap:8px;
+  align-items:center;
+  font-weight:600;
+}
+
+/* Curve */
+.hero-curve{position:absolute;bottom:-1px;width:100%}
+
+/* Sections */
+section{padding:90px 0}
+.section-title{font-size:2rem;margin-bottom:15px}
+.section-sub{color:var(--gray);text-align: center; margin-bottom:45px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:var(--card);
+  padding:32px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  opacity:0;
+  transform:translateY(20px);
+  transition:.6s ease;
+}
+.card.show{opacity:1;transform:none}
+.card h3{color:var(--primary);margin-bottom:10px}
+
+.alt{background:#f1f5f9}
+body.dark .alt{background:#020617}
+
+/* CTA */
+.cta{
+  background:var(--light);
+  color:white;
+  text-align:center;
+}
+.cta a{
+  background:var(--whatsapp);
+  padding:15px 32px;
+  border-radius:10px;
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  font-weight:600;
+  margin-top:25px;
+}
+
+/* Footer */
+footer{
+  background:#020617;
+  color:#cbd5f5;
+  padding:50px 0;
+  text-align:center;
+}
+.socials{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin:15px 0;
+}
+.socials a{opacity:.8}
+.socials a:hover{opacity:1}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle" id="toggle">
+  <i class="fa-solid fa-moon"></i>
+</div>
+
+<header>
+  <div class="container">
+    <h1 style="font-size:2.7rem;max-width:720px">We Build & Secure Data-Driven Web Systems</h1>
+    <p style="margin-top:18px;max-width:680px">
+      Softramming helps businesses design reliable platforms, protect critical data,
+      and gain clarity through analytics and secure architecture.
+    </p>
+
+    <div class="hero-actions">
+      <a class="cta-btn" href="#contact">Free System Review</a>
+      <a class="whatsapp-btn" href="https://wa.me/2347071377219" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
+      </a>
+    </div>
+  </div>
+
+  <svg class="hero-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path fill="var(--light)" d="M0,64L1440,96L1440,120L0,120Z"></path>
+  </svg>
+</header>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Who We Help</h2>
+    <p class="section-sub">Our systems are designed for organizations that rely on data, trust, and uptime.</p>
+
+    <div class="grid">
+      <div class="card"><h3>SMEs & Startups</h3><p>Build secure systems without future technical debt.</p></div>
+      <div class="card"><h3>Fintech & Platforms</h3><p>Risk-aware analytics and fraud-sensitive architecture.</p></div>
+      <div class="card"><h3>Data-Driven Teams</h3><p>Dashboards that actually support decision-making.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">Our Process</h2>
+    <div class="grid">
+      <div class="card"><h3>1. Audit</h3><p>Understand risks, goals, and architecture.</p></div>
+      <div class="card"><h3>2. Design</h3><p>Security-first system & data flow design.</p></div>
+      <div class="card"><h3>3. Build</h3><p>Clean, scalable, documented implementation.</p></div>
+      <div class="card"><h3>4. Monitor</h3><p>Visibility through analytics & reviews.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="grid">
+      <div class="card"><h3>Do you train teams?</h3><p>Yes — but only after systems are stable.</p></div>
+      <div class="card"><h3>Do you fix existing systems?</h3><p>Yes. Audits & targeted remediation.</p></div>
+      <div class="card"><h3>Do you work remotely?</h3><p>Yes. Global delivery.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="container">
+    <h2 class="section-title">Let’s Review Your System</h2>
+    <p class="section-sub" style="color:#cbd5f5">
+      Get clarity on risks, architecture, and opportunities.
+    </p>
+    <a href="https://wa.me/2347071377219" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Softramming</strong> — Secure Web Systems & Analytics</p>
+  <div class="socials">
+    <a href="https://instagram.com/soft_rammer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://youtube.com/@softramming" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <p style="opacity:.6">© 2026 Softramming</p>
+</footer>
+
+<script>
+/* reveal */
+const cards=document.querySelectorAll('.card');
+const reveal=()=>cards.forEach(c=>{
+  if(c.getBoundingClientRect().top<window.innerHeight-80)c.classList.add('show');
+});
+window.addEventListener('scroll',reveal);reveal();
+
+/* dark mode */
+const toggle=document.getElementById('toggle');
+const icon=toggle.querySelector('i');
+if(localStorage.theme==='dark'){document.body.classList.add('dark');icon.className='fa-solid fa-sun';}
+
+toggle.onclick=()=>{
+  document.body.classList.toggle('dark');
+  const dark=document.body.classList.contains('dark');
+  icon.className=dark?'fa-solid fa-sun':'fa-solid fa-moon';
+  localStorage.theme=dark?'dark':'light';
+};
+</script>
+
+</body>
+</html>
